@@ -1,0 +1,185 @@
+@import "compass/css3"
+header
+  background: url(../img/background.jpg) center no-repeat
+  background-size: cover
+  height: 636px
+  .header_wrapper
+    width: 960px
+    margin: 0 auto
+    position: relative
+    padding-top: 60px
+    .logo_wrapper
+
+      float: left
+
+      .logo
+        background: url(../img/logo.png) center no-repeat
+        float: left
+        width: 277px
+        height: 113px
+        color: white
+
+        .logo_text
+          text-align: right
+          line-height: 35px
+          padding-right: 49px
+          padding-top: 38px
+
+          h2
+            font-size: 46px
+            font-family: 'UbuntuBoldItalic'
+            margin: 0
+          h3
+            font-size: 14px
+            font-family: 'UbuntuItalic'
+            margin: 0
+            font-weight: normal
+
+      .logo_right
+        float: right
+        margin-top: 15px
+        margin-left: 25px
+        color: #ffffff
+        width: 315px
+
+        h3
+          font-size: 17px
+          font-family: 'ubuntubolditalic'
+          margin: 0
+          font-weight: normal
+          width: 100%
+          line-height: 1.5em
+
+    .contacts
+      float: left
+      color: #ffffff
+      text-align: center
+      font-family: 'ubuntubold'
+      margin-top: 10px
+      margin-left: 27px
+
+      .phone
+        font-size: 28.5px
+      .mail
+        a
+          font-size: 20.8px
+          color: #00bbf9
+
+      .popup
+        background: url(../img/bubble_call.png) center no-repeat
+        width: 85px
+        height: 53px
+        top: 20px
+        right: 0
+        position: absolute
+    .benefits
+      float: left
+      margin-left: 50px
+      .prev
+        background: url(../img/left.png) no-repeat
+        position: absolute
+        top: 460px
+        left: 0px
+        width: 42px
+        height: 33px
+        cursor: pointer
+      .next
+        background: url(../img/right.png) no-repeat
+        position: absolute
+        top: 460px
+        left: 570px
+        width: 42px
+        height: 33px
+        cursor: pointer
+        z-index: 9
+      .slider_wrapper
+        background: url(../img/ellipse.png) center no-repeat
+        width: 554px
+        height: 354px
+        padding-top: 50px
+        padding-left: 202px
+        margin-top: 40px
+      h3
+        font-size: 29px
+        font-family: 'ubuntubolditalic'
+        color: rgb(0, 52, 73)
+        margin: -15px 0 0
+      ul
+        list-style: none
+        font-size: 16.7px
+        margin: 0 0 0 -73px
+        padding: 0
+        li
+          padding-left: 40px
+          margin-bottom: 6px
+          background: url(../img/hat.png) no-repeat 0 6px
+      .benefits_button
+        background: url(../img/benefits_button.png) no-repeat
+        position: absolute
+        top: 560px
+        left: 420px
+        font-family: 'ubuntubold'
+        font-size: 13.4px
+        text-transform: uppercase
+        color: #ffffff
+        width: 177px
+        height: 73px
+        padding-left: 56px
+        padding-top: 27px
+  .button_wrapper
+
+    margin-bottom: 20px
+    margin-top: 24px
+.top_menu
+  margin-top: -4px
+  background: url(../img/menu_background.png) no-repeat
+  background-size: cover
+  height: 93px
+  nav
+    &.menu_wrapper
+      width: 960px
+      margin: 0 auto
+      position: relative
+      ul
+        padding-left: 0
+        padding-top: 22px
+        margin: 0
+        li
+          display: inline-block
+          height: 50px
+          margin-right: 9px
+          padding: 14px 10px
+          &:last-child
+            margin-right: 0
+          &:hover
+            background: rgb(0,135,216)
+            +background-image(linear-gradient(top, rgb(47,190,254),rgb(0,135,216)))
+            +box-shadow(0  3px  2px rgba(0,0,0,0.8))
+            +border-radius(10px)
+            a
+              color: white
+          a
+            text-decoration: none
+            color: #05384b
+            font-size: 12.5px
+            font-family: 'ubuntubold'
+            text-transform: uppercase
+
+
+
+
+
+.blue_button
+  background: rgb(0,135,216)
+  +background-image(linear-gradient(top, rgb(47,190,254),rgb(0,135,216)))
+  +box-shadow(0  0  15px rgba(255,255,255,0.6))
+  text-decoration: none
+  font-size: 18.4px
+  color: #ffffff
+
+  +single-text-shadow(black)
+  padding: 12px 8px
+  +border-radius(10px)
+  &:hover
+    background: rgb(47,190,254)
+    +background-image(linear-gradient(top, rgb(0,135,216),rgb(47,190,254)))

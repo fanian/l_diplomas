@@ -1,0 +1,1627 @@
+/* line 2, D:/proj/idea/diplomas/sass/style.sass */
+body {
+  font-family: "UbuntuRegular", Sans-serif;
+  background: white;
+  min-width: 1200px;
+  min-height: 200px;
+  color: black;
+}
+
+/* line 9, D:/proj/idea/diplomas/sass/style.sass */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 2, D:/proj/idea/diplomas/sass/_header.sass */
+header {
+  background: url(../img/background.jpg) center no-repeat;
+  background-size: cover;
+  height: 636px;
+}
+/* line 6, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 60px;
+}
+/* line 11, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .logo_wrapper {
+  float: left;
+}
+/* line 15, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .logo_wrapper .logo {
+  background: url(../img/logo.png) center no-repeat;
+  float: left;
+  width: 277px;
+  height: 113px;
+  color: white;
+}
+/* line 22, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .logo_wrapper .logo .logo_text {
+  text-align: right;
+  line-height: 35px;
+  padding-right: 49px;
+  padding-top: 38px;
+}
+/* line 28, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .logo_wrapper .logo .logo_text h2 {
+  font-size: 46px;
+  font-family: "UbuntuBoldItalic";
+  margin: 0;
+}
+/* line 32, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .logo_wrapper .logo .logo_text h3, header .header_wrapper footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper header .header_wrapper .logo_wrapper .logo .logo_text h4, header .header_wrapper footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper header .header_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, header .header_wrapper footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper header .header_wrapper .logo_wrapper .logo .logo_text h2 {
+  font-size: 14px;
+  font-family: "UbuntuItalic";
+  margin: 0;
+  font-weight: normal;
+}
+/* line 38, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .logo_wrapper .logo_right {
+  float: right;
+  margin-top: 15px;
+  margin-left: 25px;
+  color: white;
+  width: 315px;
+}
+/* line 45, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .logo_wrapper .logo_right h3, header .header_wrapper footer .footer_wrapper .logo_wrapper .logo_right .logo .logo_text h4, footer .footer_wrapper header .header_wrapper .logo_wrapper .logo_right .logo .logo_text h4, header .header_wrapper footer .footer_wrapper .logo_wrapper .logo .logo_text .logo_right h4, footer .footer_wrapper header .header_wrapper .logo_wrapper .logo .logo_text .logo_right h4, header .header_wrapper footer .footer_wrapper .logo_wrapper .logo_right .logo .logo_text .phone_wrapper h2, footer .footer_wrapper header .header_wrapper .logo_wrapper .logo_right .logo .logo_text .phone_wrapper h2, header .header_wrapper footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .logo_right h2, footer .footer_wrapper header .header_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .logo_right h2, header .header_wrapper footer .footer_wrapper .phone_wrapper .logo_wrapper .logo_right .logo .logo_text h2, footer .footer_wrapper .phone_wrapper header .header_wrapper .logo_wrapper .logo_right .logo .logo_text h2, header .header_wrapper footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .logo_right h2, footer .footer_wrapper .phone_wrapper header .header_wrapper .logo_wrapper .logo .logo_text .logo_right h2 {
+  font-size: 17px;
+  font-family: "ubuntubolditalic";
+  margin: 0;
+  font-weight: normal;
+  width: 100%;
+  line-height: 1.5em;
+}
+/* line 53, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .contacts {
+  float: left;
+  color: white;
+  text-align: center;
+  font-family: "ubuntubold";
+  margin-top: 10px;
+  margin-left: 27px;
+}
+/* line 61, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .contacts .phone {
+  font-size: 28.5px;
+}
+/* line 64, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .contacts .mail a {
+  font-size: 20.8px;
+  color: #00bbf9;
+}
+/* line 68, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .contacts .popup {
+  background: url(../img/bubble_call.png) center no-repeat;
+  width: 85px;
+  height: 53px;
+  top: 20px;
+  right: 0;
+  position: absolute;
+}
+/* line 75, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .benefits {
+  float: left;
+  margin-left: 50px;
+}
+/* line 78, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .benefits .prev {
+  background: url(../img/left.png) no-repeat;
+  position: absolute;
+  top: 460px;
+  left: 0px;
+  width: 42px;
+  height: 33px;
+  cursor: pointer;
+}
+/* line 86, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .benefits .next {
+  background: url(../img/right.png) no-repeat;
+  position: absolute;
+  top: 460px;
+  left: 570px;
+  width: 42px;
+  height: 33px;
+  cursor: pointer;
+  z-index: 9;
+}
+/* line 95, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .benefits .slider_wrapper {
+  background: url(../img/ellipse.png) center no-repeat;
+  width: 554px;
+  height: 354px;
+  padding-top: 50px;
+  padding-left: 202px;
+  margin-top: 40px;
+}
+/* line 102, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .benefits h3, header .header_wrapper .benefits footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text header .header_wrapper .benefits h4, header .header_wrapper .benefits footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper header .header_wrapper .benefits h2, header .header_wrapper .benefits footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text header .header_wrapper .benefits h2 {
+  font-size: 29px;
+  font-family: "ubuntubolditalic";
+  color: #003449;
+  margin: -15px 0 0;
+}
+/* line 107, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .benefits ul {
+  list-style: none;
+  font-size: 16.7px;
+  margin: 0 0 0 -73px;
+  padding: 0;
+}
+/* line 112, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .benefits ul li {
+  padding-left: 40px;
+  margin-bottom: 6px;
+  background: url(../img/hat.png) no-repeat 0 6px;
+}
+/* line 116, D:/proj/idea/diplomas/sass/_header.sass */
+header .header_wrapper .benefits .benefits_button {
+  background: url(../img/benefits_button.png) no-repeat;
+  position: absolute;
+  top: 560px;
+  left: 420px;
+  font-family: "ubuntubold";
+  font-size: 13.4px;
+  text-transform: uppercase;
+  color: white;
+  width: 177px;
+  height: 73px;
+  padding-left: 56px;
+  padding-top: 27px;
+}
+/* line 129, D:/proj/idea/diplomas/sass/_header.sass */
+header .button_wrapper {
+  margin-bottom: 20px;
+  margin-top: 24px;
+}
+
+/* line 133, D:/proj/idea/diplomas/sass/_header.sass */
+.top_menu {
+  margin-top: -4px;
+  background: url(../img/menu_background.png) no-repeat;
+  background-size: cover;
+  height: 93px;
+}
+/* line 139, D:/proj/idea/diplomas/sass/_header.sass */
+.top_menu nav.menu_wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 143, D:/proj/idea/diplomas/sass/_header.sass */
+.top_menu nav.menu_wrapper ul {
+  padding-left: 0;
+  padding-top: 22px;
+  margin: 0;
+}
+/* line 147, D:/proj/idea/diplomas/sass/_header.sass */
+.top_menu nav.menu_wrapper ul li {
+  display: inline-block;
+  height: 50px;
+  margin-right: 9px;
+  padding: 14px 10px;
+}
+/* line 152, D:/proj/idea/diplomas/sass/_header.sass */
+.top_menu nav.menu_wrapper ul li:last-child {
+  margin-right: 0;
+}
+/* line 154, D:/proj/idea/diplomas/sass/_header.sass */
+.top_menu nav.menu_wrapper ul li:hover {
+  background: #0087d8;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2fbefe), color-stop(100%, #0087d8));
+  background-image: -webkit-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: -moz-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: -o-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: linear-gradient(top, #2fbefe, #0087d8);
+  -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 159, D:/proj/idea/diplomas/sass/_header.sass */
+.top_menu nav.menu_wrapper ul li:hover a {
+  color: white;
+}
+/* line 161, D:/proj/idea/diplomas/sass/_header.sass */
+.top_menu nav.menu_wrapper ul li a {
+  text-decoration: none;
+  color: #05384b;
+  font-size: 12.5px;
+  font-family: "ubuntubold";
+  text-transform: uppercase;
+}
+
+/* line 172, D:/proj/idea/diplomas/sass/_header.sass */
+.blue_button {
+  background: #0087d8;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2fbefe), color-stop(100%, #0087d8));
+  background-image: -webkit-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: -moz-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: -o-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: linear-gradient(top, #2fbefe, #0087d8);
+  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  -moz-box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 18.4px;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+  padding: 12px 8px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 183, D:/proj/idea/diplomas/sass/_header.sass */
+.blue_button:hover {
+  background: #2fbefe;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0087d8), color-stop(100%, #2fbefe));
+  background-image: -webkit-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: -moz-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: -o-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: linear-gradient(top, #0087d8, #2fbefe);
+}
+
+/* line 2, D:/proj/idea/diplomas/sass/_left.sass */
+.left {
+  width: 292px;
+  float: left;
+  margin-top: 45px;
+}
+/* line 6, D:/proj/idea/diplomas/sass/_left.sass */
+.left .docs {
+  margin-bottom: 100px;
+  border: solid 1px #d9d9d9;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 3px grey;
+  -moz-box-shadow: 0 0 3px grey;
+  box-shadow: 0 0 3px grey;
+}
+/* line 12, D:/proj/idea/diplomas/sass/_left.sass */
+.left .docs .caption {
+  background: url(../img/green_caption.png) no-repeat center;
+  font-size: 25px;
+  font-family: "ubuntubold";
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding-top: 24px;
+  width: 294px;
+  height: 75px;
+  position: relative;
+  bottom: 50px;
+}
+/* line 25, D:/proj/idea/diplomas/sass/_left.sass */
+.left .docs .dropdown_list {
+  display: inline-block;
+  list-style: none;
+  width: 300px;
+  margin-top: -25px;
+  padding: 0;
+}
+/* line 32, D:/proj/idea/diplomas/sass/_left.sass */
+.left .docs .dropdown_list li {
+  font-size: 16.7px;
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  position: relative;
+}
+/* line 41, D:/proj/idea/diplomas/sass/_left.sass */
+.left .docs .dropdown_list li a {
+  color: #003e55;
+  text-decoration: none;
+  padding-left: 13px;
+  margin-left: 15px;
+  display: block;
+}
+/* line 47, D:/proj/idea/diplomas/sass/_left.sass */
+.left .docs .dropdown_list li a:before {
+  content: "";
+  background: url(../img/list_icon.png) no-repeat;
+  width: 12px;
+  height: 11px;
+  position: absolute;
+  left: 5px;
+  top: 7px;
+}
+/* line 56, D:/proj/idea/diplomas/sass/_left.sass */
+.left .docs .dropdown_list li.dropdown_long:before {
+  top: 48px;
+}
+/* line 59, D:/proj/idea/diplomas/sass/_left.sass */
+.left .docs .dropdown_list li:before {
+  border-bottom: 1px solid #dfdfdf;
+  content: "";
+  position: absolute;
+  height: 0;
+  top: 27px;
+  left: 28px;
+  right: 18px;
+}
+/* line 73, D:/proj/idea/diplomas/sass/_left.sass */
+.left .attestats .caption {
+  background: url(../img/darkcyan_caption.png) no-repeat;
+  left: -1px;
+}
+/* line 81, D:/proj/idea/diplomas/sass/_left.sass */
+.left .attestats .dropdown_list .dropdown_sub:hover ul {
+  display: inherit;
+}
+/* line 84, D:/proj/idea/diplomas/sass/_left.sass */
+.left .attestats .dropdown_list .dropdown_sub ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 89, D:/proj/idea/diplomas/sass/_left.sass */
+.left .attestats .dropdown_list .dropdown_sub ul li {
+  margin-left: 20px;
+  border-bottom: none;
+  margin-top: 10px;
+}
+/* line 93, D:/proj/idea/diplomas/sass/_left.sass */
+.left .attestats .dropdown_list .dropdown_sub ul li:last-child {
+  margin-bottom: 0;
+}
+/* line 95, D:/proj/idea/diplomas/sass/_left.sass */
+.left .attestats .dropdown_list .dropdown_sub ul li:before {
+  border-bottom: 0;
+}
+/* line 97, D:/proj/idea/diplomas/sass/_left.sass */
+.left .attestats .dropdown_list .dropdown_sub ul li:before:before {
+  left: 40px;
+}
+/* line 101, D:/proj/idea/diplomas/sass/_left.sass */
+.left .certificates .caption {
+  background: url(../img/blue_caption.png) no-repeat;
+}
+/* line 104, D:/proj/idea/diplomas/sass/_left.sass */
+.left .online {
+  color: #003e55;
+  font-size: 16.7px;
+  margin-bottom: 50px;
+}
+/* line 108, D:/proj/idea/diplomas/sass/_left.sass */
+.left .online .caption {
+  font-size: 20.8px;
+  text-shadow: 0px 0px 1px black;
+}
+/* line 111, D:/proj/idea/diplomas/sass/_left.sass */
+.left .online .online_contacts {
+  padding-left: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+/* line 115, D:/proj/idea/diplomas/sass/_left.sass */
+.left .online span {
+  font-family: "ubuntubold";
+}
+/* line 118, D:/proj/idea/diplomas/sass/_left.sass */
+.left .online .caption {
+  background: url(../img/yellow_caption.png) no-repeat;
+  bottom: 5px;
+  padding-top: 12px;
+}
+/* line 122, D:/proj/idea/diplomas/sass/_left.sass */
+.left .image_buttons_left {
+  display: inline-block;
+  width: 292px;
+  height: 118px;
+  font-size: 23px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 70px;
+  margin-bottom: 50px;
+}
+/* line 132, D:/proj/idea/diplomas/sass/_left.sass */
+.left .image_buttons_left.order {
+  background: url(../img/order_button.png) no-repeat;
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+/* line 138, D:/proj/idea/diplomas/sass/_left.sass */
+.left .image_buttons_left.question {
+  background: url(../img/question_button.png) no-repeat;
+  padding-top: 29px;
+  line-height: 26px;
+  margin-bottom: 100px;
+}
+/* line 143, D:/proj/idea/diplomas/sass/_left.sass */
+.left .questions {
+  color: #003e55;
+  font-size: 21px;
+  margin-bottom: 50px;
+}
+/* line 147, D:/proj/idea/diplomas/sass/_left.sass */
+.left .questions .quest {
+  margin: -10px 27px 10px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+/* line 152, D:/proj/idea/diplomas/sass/_left.sass */
+.left .questions .quest:last-child {
+  border-bottom: none;
+}
+/* line 154, D:/proj/idea/diplomas/sass/_left.sass */
+.left .questions span {
+  font-family: "ubuntubold";
+}
+/* line 157, D:/proj/idea/diplomas/sass/_left.sass */
+.left .questions .caption {
+  background: url(../img/dark_caption.png) no-repeat;
+  bottom: 5px;
+  padding-top: 12px;
+}
+/* line 162, D:/proj/idea/diplomas/sass/_left.sass */
+.left .testimonials .quest {
+  margin: 0;
+  border: none;
+  background: #f7f7f7;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+/* line 168, D:/proj/idea/diplomas/sass/_left.sass */
+.left .testimonials .quest h4, .left .testimonials .quest footer .footer_wrapper .phone_wrapper h2, footer .footer_wrapper .phone_wrapper .left .testimonials .quest h2 {
+  margin: -15px 33px 25px;
+  border-bottom: 1px solid #d9d9d9;
+  font-weight: normal;
+  position: relative;
+}
+/* line 173, D:/proj/idea/diplomas/sass/_left.sass */
+.left .testimonials .quest h4:before, .left .testimonials .quest footer .footer_wrapper .phone_wrapper h2:before, footer .footer_wrapper .phone_wrapper .left .testimonials .quest h2:before {
+  content: "";
+  background: url(../img/left_t.png) left center no-repeat;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 50px;
+  left: -25px;
+}
+/* line 181, D:/proj/idea/diplomas/sass/_left.sass */
+.left .testimonials .quest h4:after, .left .testimonials .quest footer .footer_wrapper .phone_wrapper h2:after, footer .footer_wrapper .phone_wrapper .left .testimonials .quest h2:after {
+  content: "";
+  background: url(../img/right_t.png) right bottom no-repeat;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 50px;
+  left: 225px;
+}
+/* line 192, D:/proj/idea/diplomas/sass/_left.sass */
+.left .often .caption {
+  background: url(../img/marine_caption.png) no-repeat;
+  bottom: 5px;
+  padding-top: 0;
+  line-height: 30px;
+}
+/* line 199, D:/proj/idea/diplomas/sass/_left.sass */
+.left .often .often_diploma h3, .left .often .often_diploma footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .left .often .often_diploma h4, .left .often .often_diploma footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .left .often .often_diploma h2, .left .often .often_diploma footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .left .often .often_diploma h2 {
+  display: block;
+  text-align: center;
+  color: #003e55;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+/* line 208, D:/proj/idea/diplomas/sass/_left.sass */
+.left .often .often_diploma span {
+  display: block;
+  text-align: center;
+  background: #339400;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #75e812), color-stop(100%, #339400));
+  background-image: -webkit-linear-gradient(top, #75e812, #339400);
+  background-image: -moz-linear-gradient(top, #75e812, #339400);
+  background-image: -o-linear-gradient(top, #75e812, #339400);
+  background-image: linear-gradient(top, #75e812, #339400);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
+  font-size: 26px;
+  color: white;
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-top: 13px;
+}
+/* line 219, D:/proj/idea/diplomas/sass/_left.sass */
+.left .often .often_diploma a {
+  display: block;
+  text-align: center;
+  color: #003e55;
+  font-family: "ubuntuitalic";
+  font-size: 19px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+/* line 227, D:/proj/idea/diplomas/sass/_left.sass */
+.left .often .often_diploma:nth-child(1n) {
+  margin-bottom: 70px;
+}
+/* line 230, D:/proj/idea/diplomas/sass/_left.sass */
+.left .often .often_diploma img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 233, D:/proj/idea/diplomas/sass/_left.sass */
+.left .search {
+  background: url(../img/search.png) no-repeat;
+  width: 295px;
+  height: 53px;
+}
+/* line 237, D:/proj/idea/diplomas/sass/_left.sass */
+.left .search .s {
+  width: 240px;
+  height: 37px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 21px;
+  position: relative;
+  top: 8px;
+  left: 12px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+/* line 247, D:/proj/idea/diplomas/sass/_left.sass */
+.left .search .sm {
+  background: url(../img/search_button.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+  position: relative;
+  top: 9px;
+  left: 14px;
+}
+/* line 255, D:/proj/idea/diplomas/sass/_left.sass */
+.left .payments {
+  margin-top: 80px;
+}
+/* line 257, D:/proj/idea/diplomas/sass/_left.sass */
+.left .payments h3, .left .payments footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .left .payments h4, .left .payments footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .left .payments h2, .left .payments footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .left .payments h2 {
+  color: #003e55;
+  text-align: center;
+  font-family: "ubuntubold";
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+/* line 264, D:/proj/idea/diplomas/sass/_left.sass */
+.left .payments img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 267, D:/proj/idea/diplomas/sass/_left.sass */
+.left .choose_v {
+  background: url(../img/choose_1.png) no-repeat;
+  width: 301px;
+  height: 93px;
+  padding-top: 35px;
+  padding-left: 120px;
+  margin-top: 80px;
+}
+/* line 274, D:/proj/idea/diplomas/sass/_left.sass */
+.left .choose_s {
+  background: url(../img/choose_2.png) no-repeat;
+  width: 295px;
+  height: 86px;
+  padding-left: 107px;
+  padding-top: 32px;
+}
+
+/* line 2, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+input.placeholder {
+  font-size: 16.7px;
+  text-align: center;
+  color: #848585;
+}
+/* line 3, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+input:-moz-placeholder {
+  font-size: 16.7px;
+  text-align: center;
+  color: #848585;
+}
+/* line 4, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+input::-moz-placeholder {
+  font-size: 16.7px;
+  text-align: center;
+  color: #848585;
+}
+/* line 5, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+input:-ms-input-placeholder {
+  font-size: 16.7px;
+  text-align: center;
+  color: #848585;
+}
+/* line 6, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+input::-webkit-input-placeholder {
+  font-size: 16.7px;
+  text-align: center;
+  color: #848585;
+}
+
+/* line 26, D:/proj/idea/diplomas/sass/style.sass */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 30, D:/proj/idea/diplomas/sass/style.sass */
+.wrapper_left {
+  width: 292px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 34, D:/proj/idea/diplomas/sass/style.sass */
+.wrapper_right {
+  width: 668px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 39, D:/proj/idea/diplomas/sass/style.sass */
+.fl {
+  float: left;
+}
+
+/* line 42, D:/proj/idea/diplomas/sass/style.sass */
+.fr {
+  float: right;
+}
+
+/* line 45, D:/proj/idea/diplomas/sass/style.sass */
+.cb {
+  clear: both;
+}
+
+/* line 48, D:/proj/idea/diplomas/sass/style.sass */
+input.error, textarea.error {
+  box-shadow: 0 0 5px red !important;
+}
+
+/* line 51, D:/proj/idea/diplomas/sass/style.sass */
+label.error {
+  display: none !important;
+}
+
+/* line 59, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody {
+  margin-top: 100px;
+}
+/* line 61, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody .right {
+  width: 638px;
+  float: left;
+  margin-left: 30px;
+  margin-top: -10px;
+}
+/* line 66, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody h1 {
+  font-size: 33.3px;
+  color: #063e53;
+  font-family: "ubuntubold";
+}
+/* line 70, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody h1.center {
+  text-align: center;
+}
+/* line 76, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody h2 {
+  font-size: 29.2px;
+  color: #063e53;
+  font-weight: bold;
+}
+/* line 80, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody h2.list {
+  font-size: 25px;
+  color: black;
+  font-weight: normal;
+  margin-top: 40px;
+}
+/* line 86, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody h3, .mainbody footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .mainbody h4, .mainbody footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .mainbody h2, .mainbody footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .mainbody h2 {
+  font-size: 25px;
+  color: #063e53;
+  font-weight: normal;
+}
+/* line 90, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody p {
+  font-size: 16.7px;
+}
+/* line 92, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody ol {
+  font-size: 25px;
+  padding-left: 0;
+  counter-reset: my-counter;
+  list-style-type: none;
+}
+/* line 97, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody ol li:before {
+  content: counter(my-counter,decimal) ".";
+  counter-increment: my-counter;
+  margin-right: 6px;
+  font-weight: bold;
+}
+/* line 104, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody ul.folder_list {
+  list-style: none;
+}
+/* line 106, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody ul.folder_list li {
+  font-size: 16.7px;
+}
+/* line 108, D:/proj/idea/diplomas/sass/style.sass */
+.mainbody ul.folder_list li:before {
+  content: url(../img/list_folder_icon.png) no-repeat;
+  position: relative;
+  left: -8px;
+}
+
+/* line 112, D:/proj/idea/diplomas/sass/style.sass */
+.muar {
+  padding-top: 20px;
+  background: #f7f7f7;
+  width: 668px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 118, D:/proj/idea/diplomas/sass/style.sass */
+.blue {
+  background: #00394e;
+  display: inline-block;
+  padding: 4px 4px;
+  margin-left: 65px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+/* line 126, D:/proj/idea/diplomas/sass/style.sass */
+.blue h1 {
+  color: white;
+  margin: 0;
+}
+
+/* line 129, D:/proj/idea/diplomas/sass/style.sass */
+.breadcrumb {
+  margin-top: 0;
+}
+/* line 131, D:/proj/idea/diplomas/sass/style.sass */
+.breadcrumb a {
+  font-size: 16.7px;
+  color: black;
+  line-height: 20px;
+}
+
+/* line 135, D:/proj/idea/diplomas/sass/style.sass */
+.call_you {
+  width: 480px;
+  height: 320px;
+  background: #ffec67;
+  margin: 100px auto 0 160px;
+}
+/* line 141, D:/proj/idea/diplomas/sass/style.sass */
+.call_you .form {
+  margin-right: 25px;
+  width: 334px;
+  float: right;
+}
+/* line 145, D:/proj/idea/diplomas/sass/style.sass */
+.call_you .form h3, .call_you .form footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .call_you .form h4, .call_you .form footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .call_you .form h2, .call_you .form footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .call_you .form h2 {
+  font-size: 21px;
+  font-family: "ubuntubold";
+  color: black;
+  text-align: center;
+}
+/* line 150, D:/proj/idea/diplomas/sass/style.sass */
+.call_you .form input {
+  width: 334px;
+  height: 46px;
+  margin-bottom: 20px;
+  border: none;
+}
+/* line 155, D:/proj/idea/diplomas/sass/style.sass */
+.call_you .form button {
+  background: #0087d8;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2fbefe), color-stop(100%, #0087d8));
+  background-image: -webkit-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: -moz-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: -o-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: linear-gradient(top, #2fbefe, #0087d8);
+  -webkit-box-shadow: 0 2px 5px rgba(255, 255, 255, 0.6);
+  -moz-box-shadow: 0 2px 5px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 25.8px;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+  padding: 8px 66px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 167, D:/proj/idea/diplomas/sass/style.sass */
+.call_you .form button:hover {
+  background: #2fbefe;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0087d8), color-stop(100%, #2fbefe));
+  background-image: -webkit-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: -moz-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: -o-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: linear-gradient(top, #0087d8, #2fbefe);
+}
+/* line 170, D:/proj/idea/diplomas/sass/style.sass */
+.call_you .form h4, .call_you .form footer .footer_wrapper .phone_wrapper h2, footer .footer_wrapper .phone_wrapper .call_you .form h2 {
+  font-size: 12.5px;
+  font-weight: normal;
+  text-align: center;
+}
+/* line 174, D:/proj/idea/diplomas/sass/style.sass */
+.call_you .img {
+  background: url(../img/girl.png) no-repeat;
+  width: 236px;
+  height: 385px;
+  position: absolute;
+  left: 40px;
+  bottom: 1px;
+}
+
+/* line 181, D:/proj/idea/diplomas/sass/style.sass */
+.form_questions {
+  height: 440px;
+  width: 508px;
+  margin-right: 275px;
+  background: #77d3d8;
+  margin-bottom: 60px;
+}
+/* line 188, D:/proj/idea/diplomas/sass/style.sass */
+.form_questions .form h3, .form_questions .form footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .form_questions .form h4, .form_questions .form footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .form_questions .form h2, .form_questions .form footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .form_questions .form h2 {
+  margin-top: 7px;
+}
+/* line 190, D:/proj/idea/diplomas/sass/style.sass */
+.form_questions .form input {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 192, D:/proj/idea/diplomas/sass/style.sass */
+.form_questions .form textarea {
+  width: 334px;
+  height: 120px;
+  border: none;
+  margin-bottom: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 2, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+.form_questions .form textarea.placeholder {
+  font-size: 16.7px;
+  text-align: center;
+  color: #848585;
+  padding-top: 50px;
+}
+/* line 3, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+.form_questions .form textarea:-moz-placeholder {
+  font-size: 16.7px;
+  text-align: center;
+  color: #848585;
+  padding-top: 50px;
+}
+/* line 4, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+.form_questions .form textarea::-moz-placeholder {
+  font-size: 16.7px;
+  text-align: center;
+  color: #848585;
+  padding-top: 50px;
+}
+/* line 5, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+.form_questions .form textarea:-ms-input-placeholder {
+  font-size: 16.7px;
+  text-align: center;
+  color: #848585;
+  padding-top: 50px;
+}
+/* line 6, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+.form_questions .form textarea::-webkit-input-placeholder {
+  font-size: 16.7px;
+  text-align: center;
+  color: #848585;
+  padding-top: 50px;
+}
+/* line 203, D:/proj/idea/diplomas/sass/style.sass */
+.form_questions .form button {
+  padding: 8px 77px;
+  background: #f19304;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fdc52e), color-stop(100%, #f19304));
+  background-image: -webkit-linear-gradient(top, #fdc52e, #f19304);
+  background-image: -moz-linear-gradient(top, #fdc52e, #f19304);
+  background-image: -o-linear-gradient(top, #fdc52e, #f19304);
+  background-image: linear-gradient(top, #fdc52e, #f19304);
+}
+/* line 207, D:/proj/idea/diplomas/sass/style.sass */
+.form_questions .form button:hover {
+  background: #fdc52e;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f19304), color-stop(100%, #fdc52e));
+  background-image: -webkit-linear-gradient(top, #f19304, #fdc52e);
+  background-image: -moz-linear-gradient(top, #f19304, #fdc52e);
+  background-image: -o-linear-gradient(top, #f19304, #fdc52e);
+  background-image: linear-gradient(top, #f19304, #fdc52e);
+}
+/* line 211, D:/proj/idea/diplomas/sass/style.sass */
+.form_questions .img {
+  background: url(../img/boy.png) no-repeat;
+  width: 338px;
+  height: 465px;
+  left: 0px;
+  bottom: 60px;
+}
+
+/* line 217, D:/proj/idea/diplomas/sass/style.sass */
+.central {
+  clear: both;
+}
+
+/* line 219, D:/proj/idea/diplomas/sass/style.sass */
+.form_wide {
+  width: 960px;
+  background: #79d6ff;
+  margin: 70px 0 0;
+}
+/* line 224, D:/proj/idea/diplomas/sass/style.sass */
+.form_wide .form {
+  width: 290px;
+}
+/* line 227, D:/proj/idea/diplomas/sass/style.sass */
+.form_wide .form input {
+  width: 280px;
+}
+/* line 229, D:/proj/idea/diplomas/sass/style.sass */
+.form_wide .form button {
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #4e9510;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7eca01), color-stop(100%, #4e9510));
+  background-image: -webkit-linear-gradient(top, #7eca01, #4e9510);
+  background-image: -moz-linear-gradient(top, #7eca01, #4e9510);
+  background-image: -o-linear-gradient(top, #7eca01, #4e9510);
+  background-image: linear-gradient(top, #7eca01, #4e9510);
+}
+/* line 234, D:/proj/idea/diplomas/sass/style.sass */
+.form_wide .form button:hover {
+  background: #7eca01;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4e9510), color-stop(100%, #7eca01));
+  background-image: -webkit-linear-gradient(top, #4e9510, #7eca01);
+  background-image: -moz-linear-gradient(top, #4e9510, #7eca01);
+  background-image: -o-linear-gradient(top, #4e9510, #7eca01);
+  background-image: linear-gradient(top, #4e9510, #7eca01);
+}
+/* line 237, D:/proj/idea/diplomas/sass/style.sass */
+.form_wide .img {
+  background: url(../img/people.png) no-repeat;
+  left: 280px;
+  bottom: -7px;
+  width: 345px;
+  height: 366px;
+}
+/* line 245, D:/proj/idea/diplomas/sass/style.sass */
+.form_wide .text {
+  float: left;
+  width: 315px;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+/* line 251, D:/proj/idea/diplomas/sass/style.sass */
+.form_wide .text article {
+  margin-bottom: 10px;
+}
+/* line 253, D:/proj/idea/diplomas/sass/style.sass */
+.form_wide .text article h3, .form_wide .text article footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .form_wide .text article h4, .form_wide .text article footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .form_wide .text article h2, .form_wide .text article footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .form_wide .text article h2 {
+  text-transform: uppercase;
+  font-size: 21px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* line 260, D:/proj/idea/diplomas/sass/style.sass */
+.form_wide .text article h4, .form_wide .text article footer .footer_wrapper .phone_wrapper h2, footer .footer_wrapper .phone_wrapper .form_wide .text article h2 {
+  font-size: 16.7px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* line 265, D:/proj/idea/diplomas/sass/style.sass */
+.second_form .img {
+  width: 283px;
+  height: 264px;
+  background: url(../img/people2.png) no-repeat;
+  left: 6px;
+  bottom: 2px;
+}
+/* line 271, D:/proj/idea/diplomas/sass/style.sass */
+.second_form .text {
+  margin-left: 290px;
+}
+
+/* line 275, D:/proj/idea/diplomas/sass/style.sass */
+.form_transparent {
+  margin-top: 90px;
+}
+/* line 279, D:/proj/idea/diplomas/sass/style.sass */
+.form_transparent .form {
+  padding-top: 35px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  width: 960px;
+  height: 136px;
+  border: solid 3px #33b0ba;
+}
+/* line 286, D:/proj/idea/diplomas/sass/style.sass */
+.form_transparent .form h3, .form_transparent .form footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .form_transparent .form h4, .form_transparent .form footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .form_transparent .form h2, .form_transparent .form footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .form_transparent .form h2 {
+  text-align: center;
+  font-size: 21px;
+  color: black;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+/* line 294, D:/proj/idea/diplomas/sass/style.sass */
+.form_transparent .form input {
+  display: inline-block;
+  float: left;
+  width: 270px;
+  height: 40px;
+  border: solid 1px #33b0ba;
+  margin-left: 66px;
+}
+/* line 2, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+.form_transparent .form input.placeholder {
+  text-align: left;
+  padding-left: 20px;
+}
+/* line 3, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+.form_transparent .form input:-moz-placeholder {
+  text-align: left;
+  padding-left: 20px;
+}
+/* line 4, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+.form_transparent .form input::-moz-placeholder {
+  text-align: left;
+  padding-left: 20px;
+}
+/* line 5, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+.form_transparent .form input:-ms-input-placeholder {
+  text-align: left;
+  padding-left: 20px;
+}
+/* line 6, D:/proj/idea/diplomas/sass/_placeholderText.scss */
+.form_transparent .form input::-webkit-input-placeholder {
+  text-align: left;
+  padding-left: 20px;
+}
+/* line 305, D:/proj/idea/diplomas/sass/style.sass */
+.form_transparent .form button {
+  border: none;
+  float: left;
+  background: #0087d8;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2fbefe), color-stop(100%, #0087d8));
+  background-image: -webkit-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: -moz-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: -o-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: linear-gradient(top, #2fbefe, #0087d8);
+  text-decoration: none;
+  font-size: 25.8px;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+  margin-left: 40px;
+  padding: 3px 13px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 319, D:/proj/idea/diplomas/sass/style.sass */
+.form_transparent .form button:hover {
+  background: #2fbefe;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0087d8), color-stop(100%, #2fbefe));
+  background-image: -webkit-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: -moz-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: -o-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: linear-gradient(top, #0087d8, #2fbefe);
+}
+
+/* line 323, D:/proj/idea/diplomas/sass/style.sass */
+.right_diploma {
+  text-align: center;
+  margin-bottom: 70px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  margin-right: 11px;
+}
+/* line 328, D:/proj/idea/diplomas/sass/style.sass */
+.right_diploma:nth-child(3n+4) {
+  margin-right: 0;
+}
+/* line 330, D:/proj/idea/diplomas/sass/style.sass */
+.right_diploma h3, .right_diploma footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .right_diploma h4, .right_diploma footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .right_diploma h2, .right_diploma footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .right_diploma h2 {
+  font-size: 21px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+/* line 335, D:/proj/idea/diplomas/sass/style.sass */
+.right_diploma img {
+  width: 215px;
+  height: 182px;
+}
+/* line 338, D:/proj/idea/diplomas/sass/style.sass */
+.right_diploma a {
+  display: block;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+  text-decoration: none;
+  font-size: 25.8px;
+  margin-top: 10px;
+  padding: 3px;
+  background: #f19304;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fdc52e), color-stop(100%, #f19304));
+  background-image: -webkit-linear-gradient(top, #fdc52e, #f19304);
+  background-image: -moz-linear-gradient(top, #fdc52e, #f19304);
+  background-image: -o-linear-gradient(top, #fdc52e, #f19304);
+  background-image: linear-gradient(top, #fdc52e, #f19304);
+}
+/* line 350, D:/proj/idea/diplomas/sass/style.sass */
+.right_diploma a:hover {
+  background: #fdc52e;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f19304), color-stop(100%, #fdc52e));
+  background-image: -webkit-linear-gradient(top, #f19304, #fdc52e);
+  background-image: -moz-linear-gradient(top, #f19304, #fdc52e);
+  background-image: -o-linear-gradient(top, #f19304, #fdc52e);
+  background-image: linear-gradient(top, #f19304, #fdc52e);
+}
+/* line 354, D:/proj/idea/diplomas/sass/style.sass */
+.right_diploma span {
+  font-size: 33.3px;
+  color: #4ba900;
+}
+
+/* line 357, D:/proj/idea/diplomas/sass/style.sass */
+.list_big {
+  width: 580px;
+  display: table;
+  margin: 0 auto 100px;
+}
+/* line 361, D:/proj/idea/diplomas/sass/style.sass */
+.list_big ul {
+  list-style: none;
+  padding: 0px;
+}
+/* line 364, D:/proj/idea/diplomas/sass/style.sass */
+.list_big ul li {
+  font-size: 21px;
+  padding-left: 85px;
+  padding-top: 23px;
+  background: url(../img/list_item_big.png) no-repeat 0px 10px;
+  height: 85px;
+  margin-top: 15px;
+}
+
+/* line 371, D:/proj/idea/diplomas/sass/style.sass */
+.scheme {
+  width: 405px;
+  display: table;
+  margin: 0 auto;
+}
+/* line 375, D:/proj/idea/diplomas/sass/style.sass */
+.scheme .steps {
+  background: url(../img/list_digits.png) no-repeat;
+  width: 85px;
+  height: 606px;
+  display: block;
+}
+/* line 380, D:/proj/idea/diplomas/sass/style.sass */
+.scheme .list_steps {
+  width: 300px;
+}
+/* line 382, D:/proj/idea/diplomas/sass/style.sass */
+.scheme .list_steps ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 72px;
+}
+/* line 388, D:/proj/idea/diplomas/sass/style.sass */
+.scheme .list_steps ul li {
+  font-size: 21px;
+}
+
+/* line 390, D:/proj/idea/diplomas/sass/style.sass */
+.work_scheme {
+  background: url(../img/work_scheme.png) no-repeat;
+  width: 960px;
+  height: 340px;
+  font-size: 21px;
+  margin-bottom: 80px;
+}
+/* line 397, D:/proj/idea/diplomas/sass/style.sass */
+.work_scheme .txt {
+  width: 330px;
+  position: absolute;
+}
+/* line 400, D:/proj/idea/diplomas/sass/style.sass */
+.work_scheme .txt.first {
+  top: 165px;
+  left: 10px;
+}
+/* line 403, D:/proj/idea/diplomas/sass/style.sass */
+.work_scheme .txt.second {
+  top: 165px;
+  left: 340px;
+}
+/* line 406, D:/proj/idea/diplomas/sass/style.sass */
+.work_scheme .txt.third {
+  top: 165px;
+  left: 667px;
+}
+/* line 409, D:/proj/idea/diplomas/sass/style.sass */
+.work_scheme .txt.fours {
+  top: 370px;
+  left: 160px;
+}
+/* line 412, D:/proj/idea/diplomas/sass/style.sass */
+.work_scheme .txt.fifths {
+  top: 370px;
+  left: 667px;
+}
+
+/* line 415, D:/proj/idea/diplomas/sass/style.sass */
+.hide {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+/* line 421, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion {
+  margin-bottom: 50px;
+}
+/* line 423, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion article {
+  background: #f6fbf2;
+  padding-top: 24px;
+  height: 263px;
+  margin-top: 20px;
+}
+/* line 428, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion article:hover {
+  background: #eef7e5;
+}
+/* line 430, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion .caption {
+  text-align: center;
+  cursor: pointer;
+  height: 60px;
+  width: 960px;
+  background: #4e9510;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7eca01), color-stop(100%, #4e9510));
+  background-image: -webkit-linear-gradient(top, #7eca01, #4e9510);
+  background-image: -moz-linear-gradient(top, #7eca01, #4e9510);
+  background-image: -o-linear-gradient(top, #7eca01, #4e9510);
+  background-image: linear-gradient(top, #7eca01, #4e9510);
+  text-shadow: 0px 0px 1px black;
+  padding-bottom: 3px;
+}
+/* line 440, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion .caption:hover {
+  background: #7eca01;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4e9510), color-stop(100%, #7eca01));
+  background-image: -webkit-linear-gradient(top, #4e9510, #7eca01);
+  background-image: -moz-linear-gradient(top, #4e9510, #7eca01);
+  background-image: -o-linear-gradient(top, #4e9510, #7eca01);
+  background-image: linear-gradient(top, #4e9510, #7eca01);
+}
+/* line 443, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion .caption span {
+  font-size: 33.8px;
+  color: white;
+  border-bottom: dotted white 3px;
+}
+/* line 447, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion .about {
+  width: 275px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+/* line 452, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion .about h3, .diplomas_accordion .about footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .diplomas_accordion .about h4, .diplomas_accordion .about footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .diplomas_accordion .about h2, .diplomas_accordion .about footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .diplomas_accordion .about h2 {
+  margin: 80px 0 0;
+  font-size: 20.6px;
+  color: black;
+}
+/* line 457, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion .diploma_img {
+  float: left;
+}
+/* line 460, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion .price {
+  width: 220px;
+  float: left;
+  text-align: center;
+}
+/* line 464, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion .price h4, .diplomas_accordion .price footer .footer_wrapper .phone_wrapper h2, footer .footer_wrapper .phone_wrapper .diplomas_accordion .price h2 {
+  font-size: 16.7px;
+  color: #003e55;
+  font-weight: normal;
+  margin: 80px 0 0;
+}
+/* line 469, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion .price h4 span, .diplomas_accordion .price footer .footer_wrapper .phone_wrapper h2 span, footer .footer_wrapper .phone_wrapper .diplomas_accordion .price h2 span {
+  font-family: "ubuntubold";
+  font-size: 33.3px;
+  color: #4ba900;
+}
+/* line 473, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion .order_button {
+  float: left;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+  text-decoration: none;
+  font-size: 25.8px;
+  margin-top: 95px;
+  width: 210px;
+  padding: 3px;
+  background: #f19304;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fdc52e), color-stop(100%, #f19304));
+  background-image: -webkit-linear-gradient(top, #fdc52e, #f19304);
+  background-image: -moz-linear-gradient(top, #fdc52e, #f19304);
+  background-image: -o-linear-gradient(top, #fdc52e, #f19304);
+  background-image: linear-gradient(top, #fdc52e, #f19304);
+}
+/* line 487, D:/proj/idea/diplomas/sass/style.sass */
+.diplomas_accordion .order_button:hover {
+  background: #fdc52e;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f19304), color-stop(100%, #fdc52e));
+  background-image: -webkit-linear-gradient(top, #f19304, #fdc52e);
+  background-image: -moz-linear-gradient(top, #f19304, #fdc52e);
+  background-image: -o-linear-gradient(top, #f19304, #fdc52e);
+  background-image: linear-gradient(top, #f19304, #fdc52e);
+}
+
+/* line 491, D:/proj/idea/diplomas/sass/style.sass */
+.att article {
+  background: #f2f9fd;
+}
+/* line 494, D:/proj/idea/diplomas/sass/style.sass */
+.att article:hover {
+  background: #e5f3fb;
+}
+/* line 496, D:/proj/idea/diplomas/sass/style.sass */
+.att .caption {
+  background: #0087d8;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2fbefe), color-stop(100%, #0087d8));
+  background-image: -webkit-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: -moz-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: -o-linear-gradient(top, #2fbefe, #0087d8);
+  background-image: linear-gradient(top, #2fbefe, #0087d8);
+  text-shadow: 0px 0px 1px black;
+  padding-bottom: 3px;
+}
+/* line 502, D:/proj/idea/diplomas/sass/style.sass */
+.att .caption:hover {
+  background: #2fbefe;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0087d8), color-stop(100%, #2fbefe));
+  background-image: -webkit-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: -moz-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: -o-linear-gradient(top, #0087d8, #2fbefe);
+  background-image: linear-gradient(top, #0087d8, #2fbefe);
+}
+
+/* line 507, D:/proj/idea/diplomas/sass/style.sass */
+.svid article {
+  background: #f2f9f9;
+}
+/* line 510, D:/proj/idea/diplomas/sass/style.sass */
+.svid article:hover {
+  background: #e5f3f4;
+}
+/* line 512, D:/proj/idea/diplomas/sass/style.sass */
+.svid .caption {
+  background: #007f8d;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #03d1dd), color-stop(100%, #007f8d));
+  background-image: -webkit-linear-gradient(top, #03d1dd, #007f8d);
+  background-image: -moz-linear-gradient(top, #03d1dd, #007f8d);
+  background-image: -o-linear-gradient(top, #03d1dd, #007f8d);
+  background-image: linear-gradient(top, #03d1dd, #007f8d);
+  text-shadow: 0px 0px 1px black;
+  padding-bottom: 3px;
+}
+/* line 518, D:/proj/idea/diplomas/sass/style.sass */
+.svid .caption:hover {
+  background: #03d1dd;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #007f8d), color-stop(100%, #03d1dd));
+  background-image: -webkit-linear-gradient(top, #007f8d, #03d1dd);
+  background-image: -moz-linear-gradient(top, #007f8d, #03d1dd);
+  background-image: -o-linear-gradient(top, #007f8d, #03d1dd);
+  background-image: linear-gradient(top, #007f8d, #03d1dd);
+}
+
+/* line 524, D:/proj/idea/diplomas/sass/style.sass */
+footer {
+  background: url(../img/footer_background.png) no-repeat;
+  background-size: cover;
+  height: 215px;
+}
+/* line 528, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 20px;
+}
+/* line 533, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .logo_wrapper {
+  width: 260px;
+  float: left;
+}
+/* line 537, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .logo_wrapper .logo {
+  background: url(../img/logo_footer.png) center no-repeat;
+  float: left;
+  width: 67px;
+  height: 43px;
+  color: white;
+  margin-top: 10px;
+}
+/* line 545, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .logo_wrapper .logo .logo_text {
+  text-align: right;
+  line-height: 35px;
+  width: 240px;
+  padding-top: 41px;
+}
+/* line 551, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .logo_wrapper .logo .logo_text h2 {
+  font-size: 48.5px;
+  font-family: "UbuntuBoldItalic";
+  margin: 0;
+}
+/* line 555, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .logo_wrapper .logo .logo_text h3, footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2 {
+  font-size: 14.7px;
+  font-family: "UbuntuItalic";
+  margin: 0;
+  font-weight: normal;
+}
+/* line 560, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2 {
+  font-family: "ubunturegular";
+  line-height: 1.2em;
+  margin-left: 16.7px;
+  text-align: left;
+  margin-top: 10px;
+}
+/* line 567, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .phone_wrapper {
+  margin-left: 45px;
+  width: 365px;
+}
+/* line 570, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .phone_wrapper h4, footer .footer_wrapper .phone_wrapper h2 {
+  display: block;
+  font-size: 16.7px;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+  text-align: left;
+  margin-bottom: 0;
+  font-weight: normal;
+  margin-top: 33px;
+}
+/* line 580, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .phone_wrapper h2 {
+  font-size: 41.7px;
+  font-family: "ubuntubold";
+  margin: 0 0 20px;
+}
+/* line 585, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .phone_wrapper .green_button {
+  background: #4caa00;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #64e000), color-stop(100%, #4caa00));
+  background-image: -webkit-linear-gradient(top, #64e000, #4caa00);
+  background-image: -moz-linear-gradient(top, #64e000, #4caa00);
+  background-image: -o-linear-gradient(top, #64e000, #4caa00);
+  background-image: linear-gradient(top, #64e000, #4caa00);
+  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  -moz-box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 16.7px;
+  color: white;
+  text-shadow: 0px 0px 1px #aaaaaa;
+  padding: 14px 70px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 595, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .phone_wrapper .green_button:hover {
+  background: #64e000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4caa00), color-stop(100%, #64e000));
+  background-image: -webkit-linear-gradient(top, #4caa00, #64e000);
+  background-image: -moz-linear-gradient(top, #4caa00, #64e000);
+  background-image: -o-linear-gradient(top, #4caa00, #64e000);
+  background-image: linear-gradient(top, #4caa00, #64e000);
+}
+/* line 598, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .contacts_wrapper {
+  margin-top: 100px;
+}
+/* line 600, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .contacts_wrapper .popup {
+  background: url(../img/bubble_call.png) center no-repeat;
+  width: 108px;
+  height: 69px;
+  top: 58px;
+  right: 133px;
+  position: absolute;
+}
+/* line 607, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .contacts_wrapper h3, footer .footer_wrapper .contacts_wrapper .logo_wrapper .logo .logo_text h4, footer .footer_wrapper .logo_wrapper .logo .logo_text .contacts_wrapper h4, footer .footer_wrapper .contacts_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .contacts_wrapper h2, footer .footer_wrapper .contacts_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .contacts_wrapper h2 {
+  text-shadow: 0px 0px 1px black;
+  margin: 0;
+  font-size: 16.7px;
+  color: white;
+  font-weight: normal;
+}
+/* line 613, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .contacts_wrapper h3 span, footer .footer_wrapper .contacts_wrapper .logo_wrapper .logo .logo_text h4 span, footer .footer_wrapper .logo_wrapper .logo .logo_text .contacts_wrapper h4 span, footer .footer_wrapper .contacts_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2 span, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .contacts_wrapper h2 span, footer .footer_wrapper .contacts_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2 span, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .contacts_wrapper h2 span {
+  font-family: "ubuntubold";
+}
+/* line 615, D:/proj/idea/diplomas/sass/style.sass */
+footer .footer_wrapper .contacts_wrapper h3 a, footer .footer_wrapper .contacts_wrapper .logo_wrapper .logo .logo_text h4 a, footer .footer_wrapper .logo_wrapper .logo .logo_text .contacts_wrapper h4 a, footer .footer_wrapper .contacts_wrapper .logo_wrapper .logo .logo_text .phone_wrapper h2 a, footer .footer_wrapper .logo_wrapper .logo .logo_text .phone_wrapper .contacts_wrapper h2 a, footer .footer_wrapper .contacts_wrapper .phone_wrapper .logo_wrapper .logo .logo_text h2 a, footer .footer_wrapper .phone_wrapper .logo_wrapper .logo .logo_text .contacts_wrapper h2 a {
+  color: #00bbf9;
+  text-decoration: none;
+}

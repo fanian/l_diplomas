@@ -1,0 +1,682 @@
+$f: 'UbuntuRegular', Sans-serif
+body
+  font-family: $f
+  background: white
+  min-width: 1200px
+  min-height: 200px
+  color: #000000
+
+*, *:before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  outline: none
+
+@import "compass/css3"
+@import "placeholderText"
+@import "header"
+@import "left"
+
+input
+  +input-placeholder
+    font-size: 16.7px
+    text-align: center
+    color: #848585
+
+.wrapper
+  width: 960px
+  margin: 0 auto
+  position: relative
+.wrapper_left
+  width: 292px
+  margin: 0 auto
+  position: relative
+.wrapper_right
+  width: 668px
+  margin: 0 auto
+  position: relative
+
+.fl
+  float: left
+
+.fr
+  float: right
+
+.cb
+  clear: both
+
+input.error, textarea.error
+  box-shadow: 0 0 5px red !important
+
+label.error
+  display: none !important
+
+//input
+//  @include input-placeholder
+//    color: #000000
+//    font-size: 16px
+
+.mainbody
+  margin-top: 100px
+  .right
+    width: 638px
+    float: left
+    margin-left: 30px
+    margin-top: -10px
+  h1
+    font-size: 33.3px
+    color: #063e53
+    font-family: 'ubuntubold'
+    &.center
+      text-align: center
+
+
+
+
+  h2
+    font-size: 29.2px
+    color: #063e53
+    font-weight: bold
+    &.list
+      font-size: 25px
+      color: black
+      font-weight: normal
+      margin-top: 40px
+
+  h3
+    font-size: 25px
+    color: #063e53
+    font-weight: normal
+  p
+    font-size: 16.7px
+  ol
+    font-size: 25px
+    padding-left: 0
+    counter-reset: my-counter
+    list-style-type: none
+    li:before
+      content: counter(my-counter, decimal) '.'
+      counter-increment: my-counter
+      margin-right: 6px
+      font-weight: bold
+
+  ul
+    &.folder_list
+      list-style: none
+      li
+        font-size: 16.7px
+        &:before
+          content: url(../img/list_folder_icon.png) no-repeat
+          position: relative
+          left: -8px
+.muar
+  padding-top: 20px
+  background: rgb(247,247,247)
+  width: 668px
+  +border-radius(10px)
+
+.blue
+  background: rgb(0, 57, 78)
+  display: inline-block
+  padding: 4px 4px
+  margin-left: 65px
+  +border-radius(10px)
+  margin-bottom: 20px
+
+  h1
+    color: white
+    margin: 0
+.breadcrumb
+  margin-top: 0
+  a
+    font-size: 16.7px
+    color: black
+    line-height: 20px
+.call_you
+  width: 480px
+  height: 320px
+  background: rgb(255,236,103)
+  margin: 100px auto 0 160px
+
+  .form
+    margin-right: 25px
+    width: 334px
+    float: right
+    h3
+      font-size: 21px
+      font-family: 'ubuntubold'
+      color: black
+      text-align: center
+    input
+      width: 334px
+      height: 46px
+      margin-bottom: 20px
+      border: none
+    button
+      background: rgb(0,135,216)
+      +background-image(linear-gradient(top, rgb(47,190,254),rgb(0,135,216)))
+      +box-shadow(0  2px  5px rgba(255,255,255,0.6))
+      text-decoration: none
+      font-size: 25.8px
+      color: #ffffff
+      +single-text-shadow(#000)
+
+
+      padding: 8px 66px
+      +border-radius(10px)
+      &:hover
+        background: rgb(47,190,254)
+        +background-image(linear-gradient(top, rgb(0,135,216),rgb(47,190,254)))
+    h4
+      font-size: 12.5px
+      font-weight: normal
+      text-align: center
+  .img
+    background: url(../img/girl.png) no-repeat
+    width: 236px
+    height: 385px
+    position: absolute
+    left: 40px
+    bottom: 1px
+.form_questions
+  height: 440px
+  width: 508px
+  margin-right: 275px
+  background: rgb(119,211,216)
+  margin-bottom: 60px
+  .form
+    h3
+      margin-top: 7px
+    input
+      +border-radius(5px)
+    textarea
+      width: 334px
+      height: 120px
+      border: none
+      margin-bottom: 20px
+      +border-radius(5px)
+      +input-placeholder
+        font-size: 16.7px
+        text-align: center
+        color: #848585
+        padding-top: 50px
+    button
+      padding: 8px 77px
+      background: rgb(241,147,4)
+      +background-image(linear-gradient(top, rgb(253,197,46),rgb(241,147,4)))
+      &:hover
+        background: rgb(253,197,46)
+        +background-image(linear-gradient(top, rgb(241,147,4),rgb(253,197,46)))
+
+  .img
+    background: url(../img/boy.png) no-repeat
+    width: 338px
+    height: 465px
+    left: 0px
+    bottom: 60px
+.central
+  clear: both
+.form_wide
+  width: 960px
+  background: rgb(121,214,255)
+  margin: 70px 0 0
+
+  .form
+    width: 290px
+
+    input
+      width: 280px
+    button
+      padding-left: 40px
+      padding-right: 40px
+      background: rgb(78,149,16)
+      +background-image(linear-gradient(top, rgb(126,202,1),rgb(78,149,16)))
+      &:hover
+        background: rgb(126,202,1)
+        +background-image(linear-gradient(top, rgb(78,149,16),rgb(126,202,1)))
+  .img
+    background: url(../img/people.png) no-repeat
+    left: 280px
+    bottom: -7px
+    width: 345px
+    height: 366px
+
+
+  .text
+    float: left
+    width: 315px
+    margin-left: 15px
+    margin-top: 25px
+
+    article
+      margin-bottom: 10px
+      h3
+        text-transform: uppercase
+        font-size: 21px
+        color: black
+        font-weight: bold
+        margin-bottom: 10px
+
+      h4
+        font-size: 16.7px
+        font-weight: normal
+        margin: 0
+.second_form
+  .img
+    width: 283px
+    height: 264px
+    background: url(../img/people2.png) no-repeat
+    left: 6px
+    bottom: 2px
+  .text
+    margin-left: 290px
+
+
+.form_transparent
+  margin-top: 90px
+
+
+  .form
+    padding-top: 35px
+    margin-bottom: 30px
+    +border-radius(5px)
+    width: 960px
+    height: 136px
+    border: solid 3px rgb(51,176,186)
+    h3
+      text-align: center
+
+      font-size: 21px
+      color: black
+      font-weight: bold
+      margin-top: -20px
+      margin-bottom: 10px
+    input
+      display: inline-block
+      float: left
+      width: 270px
+      height: 40px
+      border: solid 1px rgb(51,176,186)
+      margin-left: 66px
+      +input-placeholder
+        text-align: left
+        padding-left: 20px
+
+    button
+      border: none
+      float: left
+      background: rgb(0,135,216)
+      +background-image(linear-gradient(top, rgb(47,190,254),rgb(0,135,216)))
+      text-decoration: none
+      font-size: 25.8px
+      color: #ffffff
+      +single-text-shadow(#000)
+      margin-left: 40px
+
+
+      padding: 3px 13px
+      +border-radius(10px)
+      &:hover
+        background: rgb(47,190,254)
+        +background-image(linear-gradient(top, rgb(0,135,216),rgb(47,190,254)))
+
+.right_diploma
+  text-align: center
+  margin-bottom: 70px
+  +border-radius(10px)
+  margin-right: 11px
+  &:nth-child(3n+4)
+    margin-right: 0
+  h3
+    font-size: 21px
+    margin-top: 15px
+    margin-bottom: 0
+
+  img
+    width: 215px
+    height: 182px
+  a
+    display: block
+    color: #ffffff
+    +single-text-shadow(black)
+    text-decoration: none
+    font-size: 25.8px
+    margin-top: 10px
+
+    padding: 3px
+    background: rgb(241,147,4)
+    +background-image(linear-gradient(top, rgb(253,197,46),rgb(241,147,4)))
+
+    &:hover
+      background: rgb(253,197,46)
+      +background-image(linear-gradient(top, rgb(241,147,4),rgb(253,197,46)))
+
+  span
+    font-size: 33.3px
+    color: #4ba900
+.list_big
+  width: 580px
+  display: table
+  margin: 0 auto 100px
+  ul
+    list-style: none
+    padding: 0px
+    li
+      font-size: 21px
+      padding-left: 85px
+      padding-top: 23px
+      background: url(../img/list_item_big.png) no-repeat 0px 10px
+      height: 85px
+      margin-top: 15px
+.scheme
+  width: 405px
+  display: table
+  margin: 0 auto
+  .steps
+    background: url(../img/list_digits.png) no-repeat
+    width: 85px
+    height: 606px
+    display: block
+  .list_steps
+    width: 300px
+    ul
+      list-style: none
+      padding-left: 0
+
+      margin-top: 10px
+      margin-bottom: 72px
+      li
+        font-size: 21px
+.work_scheme
+
+  background: url(../img/work_scheme.png) no-repeat
+  width: 960px
+  height: 340px
+  font-size: 21px
+  margin-bottom: 80px
+  .txt
+    width: 330px
+    position: absolute
+    &.first
+      top: 165px
+      left: 10px
+    &.second
+      top: 165px
+      left: 340px
+    &.third
+      top: 165px
+      left: 667px
+    &.fours
+      top: 370px
+      left: 160px
+    &.fifths
+      top: 370px
+      left: 667px
+.hide
+
+  position: absolute !important
+  top: -9999px !important
+  left: -9999px !important
+
+.diplomas_accordion
+  margin-bottom: 50px
+  article
+    background: rgb(246,251,242)
+    padding-top: 24px
+    height: 263px
+    margin-top: 20px
+    &:hover
+      background: rgb(238,247,229)
+  .caption
+    text-align: center
+    cursor: pointer
+    height: 60px
+    width: 960px
+    background: rgb(78,149,16)
+    +background-image(linear-gradient(top, rgb(126,202,1),rgb(78,149,16)))
+    +single-text-shadow(black)
+    padding-bottom: 3px
+
+    &:hover
+      background: rgb(126,202,1)
+      +background-image(linear-gradient(top, rgb(78,149,16),rgb(126,202,1)))
+    span
+      font-size: 33.8px
+      color: #ffffff
+      border-bottom: dotted #ffffff 3px
+  .about
+    width: 275px
+    float: left
+    margin-right: 10px
+    margin-left: 10px
+    h3
+      margin: 80px 0 0
+      font-size: 20.6px
+      color: black
+
+  .diploma_img
+    float: left
+
+  .price
+    width: 220px
+    float: left
+    text-align: center
+    h4
+      font-size: 16.7px
+      color: #003e55
+      font-weight: normal
+      margin: 80px 0 0
+      span
+        font-family: 'ubuntubold'
+        font-size: 33.3px
+        color: #4ba900
+  .order_button
+    float: left
+    text-align: center
+    color: #ffffff
+    +single-text-shadow(black)
+    text-decoration: none
+    font-size: 25.8px
+    margin-top: 95px
+    width: 210px
+
+    padding: 3px
+    background: rgb(241,147,4)
+    +background-image(linear-gradient(top, rgb(253,197,46),rgb(241,147,4)))
+
+    &:hover
+      background: rgb(253,197,46)
+      +background-image(linear-gradient(top, rgb(241,147,4),rgb(253,197,46)))
+.att
+  article
+    background: rgb(242,249,253)
+
+    &:hover
+      background: rgb(229,243,251)
+  .caption
+    background: rgb(0,135,216)
+    +background-image(linear-gradient(top, rgb(47,190,254),rgb(0,135,216)))
+    +single-text-shadow(black)
+    padding-bottom: 3px
+
+    &:hover
+      background: rgb(47,190,254)
+      +background-image(linear-gradient(top, rgb(0,135,216),rgb(47,190,254)))
+
+.svid
+  article
+    background: rgb(242,249,249)
+
+    &:hover
+      background: rgb(229,243,244)
+  .caption
+    background: rgb(0,127,141)
+    +background-image(linear-gradient(top, rgb(3,209,221),rgb(0,127,141)))
+    +single-text-shadow(black)
+    padding-bottom: 3px
+
+    &:hover
+      background: rgb(3,209,221)
+      +background-image(linear-gradient(top, rgb(0,127,141),rgb(3,209,221)))
+
+
+
+footer
+  background: url(../img/footer_background.png) no-repeat
+  background-size: cover
+  height: 215px
+  .footer_wrapper
+    width: 960px
+    margin: 0 auto
+    position: relative
+    padding-top: 20px
+    .logo_wrapper
+      width: 260px
+      float: left
+
+      .logo
+        background: url(../img/logo_footer.png) center no-repeat
+        float: left
+        width: 67px
+        height: 43px
+        color: white
+        margin-top: 10px
+
+        .logo_text
+          text-align: right
+          line-height: 35px
+          width: 240px
+          padding-top: 41px
+
+          h2
+            font-size: 48.5px
+            font-family: 'UbuntuBoldItalic'
+            margin: 0
+          h3
+            font-size: 14.7px
+            font-family: 'UbuntuItalic'
+            margin: 0
+            font-weight: normal
+          h4
+            @extend h3
+            font-family: 'ubunturegular'
+            line-height: 1.2em
+            margin-left: 16.7px
+            text-align: left
+            margin-top: 10px
+    .phone_wrapper
+      margin-left: 45px
+      width: 365px
+      h4
+        display: block
+        font-size: 16.7px
+        color: #ffffff
+        +single-text-shadow(black)
+        text-align: left
+        margin-bottom: 0
+        font-weight: normal
+        margin-top: 33px
+
+      h2
+        @extend h4
+        font-size: 41.7px
+        font-family: 'ubuntubold'
+        margin: 0 0 20px
+      .green_button
+        background: rgb(76,170,0)
+        +background-image(linear-gradient(top, rgb(100,224,0),rgb(76,170,0)))
+        +box-shadow(0  0  15px rgba(255,255,255,0.6))
+        text-decoration: none
+        font-size: 16.7px
+        color: #ffffff
+        +single-text-shadow
+        padding: 14px 70px
+        +border-radius(10px)
+        &:hover
+          background: rgb(100,224,0)
+          +background-image(linear-gradient(top, rgb(76,170,0),rgb(100,224,0)))
+    .contacts_wrapper
+      margin-top: 100px
+      .popup
+        background: url(../img/bubble_call.png) center no-repeat
+        width: 108px
+        height: 69px
+        top: 58px
+        right: 133px
+        position: absolute
+      h3
+        +single-text-shadow(black)
+        margin: 0
+        font-size: 16.7px
+        color: #ffffff
+        font-weight: normal
+        span
+          font-family: 'ubuntubold'
+        a
+          color: #00bbf9
+          text-decoration: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
